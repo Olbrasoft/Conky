@@ -1,7 +1,4 @@
 # Conky
-# Conky
-# Conky
-# Conky
-# Conky
-# Conky
-# Conky
+
+em dopisu
+Dalsi radek z pro zkusku povereni
