@@ -76,25 +76,25 @@ ${voffset 136}${color1}${goto 271}${freq_g cpu0} Ghz${alignr 715}${hwmon 1 temp 
 #${voffset 20}${color1}${goto 271}${freq_g cpu0} Ghz${alignr 715}${acpitemp} °C
 ## CPU ###################
 ${voffset 3}${goto 285}${color1}Core 1${alignr 715}${color1}${lua cpu_core 1}%
-${voffset 3}${goto 285}${color1}Core 2${alignr 715}${color1}${lua cpu_core 2}%
-${voffset 2}${goto 285}${color1}Core 3${alignr 715}${color1}${lua cpu_core 3}%
-${voffset 2}${goto 285}${color1}Core 4${alignr 715}${color1}${lua cpu_core 4}%
-${voffset 2}${goto 285}${color1}Core 5${alignr 715}${color1}${lua cpu_core 5}%
+${voffset 1}${goto 285}${color1}Core 2${alignr 715}${color1}${lua cpu_core 2}%
+${voffset 3}${goto 285}${color1}Core 3${alignr 715}${color1}${lua cpu_core 3}%
+${voffset 0}${goto 285}${color1}Core 4${alignr 715}${color1}${lua cpu_core 4}%
+${voffset 1}${goto 285}${color1}Core 5${alignr 715}${color1}${lua cpu_core 5}%
 ${voffset 3}${goto 285}${color1}Core 6${alignr 715}${color1}${lua cpu_core 6}%
-${voffset -1}${goto 285}${color1}Core 7${alignr 715}${color1}${lua cpu_core 7}%
-${voffset 0}${goto 285}${color1}Core 8${alignr 715}${color1}${lua cpu_core 8}%
-${goto 179}${voffset 22}${color1}${top name 1}${alignr 680}${top cpu 1}%
+${voffset 3}${goto 285}${color1}Core 7${alignr 715}${color1}${lua cpu_core 7}%
+${voffset 1}${goto 285}${color1}Core 8${alignr 715}${color1}${lua cpu_core 8}%
+${goto 179}${voffset 15}${color1}${top name 1}${alignr 680}${top cpu 1}%
 ${goto 180}${color1}${top name 2}${alignr 680}${top cpu 2}%
 ${goto 180}${color1}${top name 3}${alignr 680}${top cpu 3}%
 ${font Michroma:size=16}${color0}${goto 180}${voffset 24}CPU
 
 ## GPU ###################
-${font Michroma:size=16}${color0}${goto 740}${voffset 319}GPU
-${font}${goto 625}${voffset 30}${color1}GPU Temp${goto 750}${color1}${hwmon 2 temp 1} °C
-${goto 625}${voffset -42}${color1}GPU Util${goto 750}${color1}${nvidia gpuutil 0}%
+${font Michroma:size=16}${color0}${goto 740}${voffset 339}GPU
+${voffset -5}${font}${goto 625}${color1}GPU Temp${goto 750}${color1}${hwmon 2 temp 1} °C
+${voffset 5}${goto 625}${color1}GPU Util${goto 750}${color1}${nvidia gpuutil 0}%
 
 ## DISKIO ################
-${voffset -658}${goto 768}${font}${color1}${top_io name 1}${alignr 150}${top_io io_write 1} %
+${voffset -681}${goto 768}${font}${color1}${top_io name 1}${alignr 150}${top_io io_write 1} %
 ${goto 768}${voffset 4}${color1}${top_io name 2}${alignr 150}${top_io io_write 2} %
 ${goto 768}${voffset 4}${color1}${top_io name 3}${alignr 150}${top_io io_write 3} %
 ${goto 740}${voffset 24}${color1}disk writes${alignr 150}${diskio_write} %
@@ -102,23 +102,23 @@ ${goto 740}${color1}disk reads${alignr 150}${diskio_read} %
 ${font Michroma:size=16}${color0}${goto 868}${voffset 11}IO WAIT
 
 ## MEMORY ################
-${font Michroma:size=16}${color0}${goto 800}${voffset 149}MEMORY
-${font}${goto 714}${voffset 6}${color1}${top_mem name 1}${alignr 200}${top_mem mem 1}%
-${goto 714}${color1}${top_mem name 2}${alignr 200}${top_mem mem 2}%
-${goto 714}${color1}${top_mem name 3}${alignr 200}${top_mem mem 3}%
-${voffset 25}${goto 738}${color1}SWAP${alignr 200}${color1}${swap} / ${color1}${swapmax}
-${voffset 6}${goto 738}${color1}RAM ${alignr 200}${color1}${mem} / ${color1}${memmax}
+${font Michroma:size=16}${color0}${goto 964}${voffset 149}${alignr 90}MEMORY
+${font}${goto 714}${voffset 6}${color1}${top_mem name 1}${alignr 90}${top_mem mem 1}%
+${goto 714}${color1}${top_mem name 2}${alignr 90}${top_mem mem 2}%
+${goto 714}${color1}${top_mem name 3}${alignr 90}${top_mem mem 3}%
+${voffset 25}${goto 738}${color1}SWAP${alignr 90}${color1}${swap} / ${color1}${swapmax}
+${voffset 6}${goto 738}${color1}RAM ${alignr 90}${color1}${mem} / ${color1}${memmax}
 
 ## FILESYSTEMS #################
-${goto 120}${voffset -85}/${color1}${alignr 690}${fs_used /} / ${fs_size /}
-${goto 120}${voffset 2}/media/jirka/Data${color1}${alignr 690}${fs_used /media/jirka/Data} / ${fs_size /media/jirka/Data}
-${goto 120}${voffset 1}/media/jirka/backup_linux${color1}${alignr 690}${fs_used /media/jirka/backup_linux} / ${fs_size /media/jirka/backup_linux}
+${goto 120}${voffset -90}/${color1}${alignr 690}${fs_used /} / ${fs_size /}
+${goto 120}${voffset 4}/media/jirka/Data${color1}${alignr 690}${fs_used /media/jirka/Data} / ${fs_size /media/jirka/Data}
+${goto 120}${voffset 2}/media/jirka/backup_linux${color1}${alignr 690}${fs_used /media/jirka/backup_linux} / ${fs_size /media/jirka/backup_linux}
 ${goto 118}${voffset 38}${font Michroma:size=16}${color0}FILESYSTEM
 ## INTERNET ################
-${font Michroma:size=16}${color0}${voffset 310}${goto 684}INTERNET INFO
+${font Michroma:size=16}${color0}${voffset 316}${goto 674}INTERNET INFO
 ${font}${color1}${alignr 284}${voffset -8}WiFi     ${color1}${wireless_essid wlp6s0}
-${goto 628}${voffset 12}Up${goto 700}${color1}${totalup wlp6s0} / ${color1}${upspeed wlp6s0}
-${goto 628}${voffset 3}Down${goto 700}${color1}${totaldown wlp6s0} / ${color1}${downspeed wlp6s0}
+${goto 628}${voffset 7}Up${goto 700}${color1}${totalup wlp6s0} / ${color1}${upspeed wlp6s0}
+${goto 628}${voffset 5}Down${goto 700}${color1}${totaldown wlp6s0} / ${color1}${downspeed wlp6s0}
 ${goto 630}${voffset 4}Local IP${goto 700}${addr wlp6s0}
 ${goto 630}${voffset 0}Public IP${goto 700}${execi 3600 wget -q -O - checkip.dyndns.org | sed -e 's/[^[:digit:].]//g'}
 ${voffset -24}
@@ -126,7 +126,7 @@ ${voffset -24}
 
 ## TIME ########################
 ${font Michroma:size=16}${alignr 680}${voffset -310}${color0}${time %a} ${color0}${time %x}
-${font Michroma:size=24}${alignr 700}${color1}${voffset 26}${time %H}:${time %M}
+${font Michroma:size=36}${alignr 718}${color1}${voffset 26}${time %H}:${time %M}
 ## BATTERY #####################
 #{{ BATTERY }}
 ## OS
