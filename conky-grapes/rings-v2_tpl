@@ -367,3 +367,4 @@ function conky_main()
 -- quand fond nécessaire
 --    conky_draw_bg()
 end
+
