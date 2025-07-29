@@ -35,4 +35,4 @@ Více informací najdete v [dokumentaci conky-grapes](conky-grapes/README.md).
 
 Projekty v této kolekci jsou dostupné pod různými licencemi - viz jednotlivé projekty pro detaily.
 
-neco na zkousku
+nporad neco na zkousku
