@@ -239,12 +239,26 @@ settings_table = {
         arg='',
         max=100,
         bg_colour=0x3b3b3b,
-        bg_alpha=0.4,
+        bg_alpha=0.6,
         fg_colour=0xffffff,
         fg_alpha=0.8,
         x=720, y=560, -- posunuto o 10 px dolů
         radius=100 - outer_ring_thickness/2 - ring_gap - (18/2), -- stejný poloměr jako prostřední IO wait
         thickness=18, -- stejná šířka jako prostřední IO wait
+        start_angle=180,
+        end_angle=420
+    },
+    {
+        name='nvidia',
+        arg='memutil',
+        max=100,
+        bg_colour=0x3b3b3b,
+        bg_alpha=0.4,
+        fg_colour=0xffffff,
+        fg_alpha=0.8,
+        x=720, y=560, -- posunuto o 10 px dolů
+        radius=100 - outer_ring_thickness/2 - ring_gap - 18 - ring_gap - (15/2), -- vnitřní kruh
+        thickness=15, -- nejmenší šířka
         start_angle=180,
         end_angle=420
     },
@@ -381,7 +395,7 @@ settings_table = {
         arg='5 nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits',
         max=100,
         bg_colour=0x3b3b3b,
-        bg_alpha=0.8,
+        bg_alpha=0.6,
         fg_colour=0xffffff, -- bílá
         fg_alpha=0.8,
         x=610, y=780, -- graf GPU je posunut o 20 px dolů v konfiguraci

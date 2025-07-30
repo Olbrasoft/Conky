@@ -103,10 +103,11 @@ ${font Michroma:size=16}${color0}${goto 868}${voffset 11}IO WAIT
 
 ## MEMORY ################
 ${font Michroma:size=16}${color0}${goto 964}${voffset 149}${alignr 90}MEMORY
-${font}${goto 714}${voffset 6}${color1}${top_mem name 1}${alignr 90}${top_mem mem 1}%
+${font}${goto 714}${voffset -4}${color1}${top_mem name 1}${alignr 90}${top_mem mem 1}%
 ${goto 714}${color1}${top_mem name 2}${alignr 90}${top_mem mem 2}%
 ${goto 714}${color1}${top_mem name 3}${alignr 90}${top_mem mem 3}%
-${voffset 25}${goto 738}${color1}SWAP${alignr 90}${color1}${swap} / ${color1}${swapmax}
+${voffset 13}${goto 738}${color1}VRAM${alignr 90}${color1}${nvidia memused 0}/${nvidia memmax 0} MB
+${voffset 6}${goto 738}${color1}SWAP${alignr 90}${color1}${swap} / ${color1}${swapmax}
 ${voffset 6}${goto 738}${color1}RAM ${alignr 90}${color1}${mem} / ${color1}${memmax}
 
 ## FILESYSTEMS #################
